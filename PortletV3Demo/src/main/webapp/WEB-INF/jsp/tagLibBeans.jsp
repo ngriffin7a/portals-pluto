@@ -23,6 +23,7 @@ limitations under the License.
 <%@ page import="static basic.portlet.TagLibPortlet.*" %>
 <%@ page import="static javax.portlet.PortletRequest.*" %>
 
+<portlet:defineObjects/>
 
 <div class='infobox'>
    <h4>EL beans for phase: ${phaseTitle}</h4>
