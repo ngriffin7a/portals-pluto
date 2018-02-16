@@ -555,6 +555,7 @@ public class HeaderPortletTests_SPEC14_PortletRequest_ApiHeader1 implements Port
          // Take backup of attributes set in APPLICATION_SCOPE by other portlets. 
          // We will restore them as soon as we initialize a new session
          // in test case V3HeaderPortletTests_SPEC14_PortletRequest_ApiHeader_getPortletSessionB2.
+         // LIFERAY: Fails due to https://issues.liferay.com/browse/LPS-77746
          sessionAttributes = ps.getAttributeMap(APPLICATION_SCOPE);
          ps.invalidate();
          if(!portletReq.isRequestedSessionIdValid()){
@@ -603,6 +604,7 @@ public class HeaderPortletTests_SPEC14_PortletRequest_ApiHeader1 implements Port
       /* TestCase: V3HeaderPortletTests_SPEC14_PortletRequest_ApiHeader_getPortletSessionA2 */
       /* Details: "Method getPortletSession(): Returns new PortletSession if one    */
       /* does not already exist"                                                    */
+      // LIFERAY: Fails due to https://issues.liferay.com/browse/LPS-77746
       {
          TestResult result = tcd.getTestResultFailed(V3HEADERPORTLETTESTS_SPEC14_PORTLETREQUEST_APIHEADER_GETPORTLETSESSIONA2);
          PortletSession ps = portletReq.getPortletSession();
@@ -730,6 +732,7 @@ public class HeaderPortletTests_SPEC14_PortletRequest_ApiHeader1 implements Port
       /* TestCase: V3HeaderPortletTests_SPEC14_PortletRequest_ApiHeader_getAuthType1 */
       /* Details: "Method getAuthType(): Returns a String indicating the            */
       /* authentication type if the request was authenticated"                      */
+      // LIFERAY: Fails due to https://issues.liferay.com/browse/LPS-76630
       {
          TestResult result = tcd.getTestResultFailed(V3HEADERPORTLETTESTS_SPEC14_PORTLETREQUEST_APIHEADER_GETAUTHTYPE1);
          String authType = portletReq.getAuthType();
@@ -1227,6 +1230,7 @@ public class HeaderPortletTests_SPEC14_PortletRequest_ApiHeader1 implements Port
       /* TestCase: V3HeaderPortletTests_SPEC14_PortletRequest_ApiHeader_isRequestedSessionIdValid1 */
       /* Details: "Method isRequestedSessionIdValid(): Returns true if the session  */
       /* ID is valid"                                                               */
+      // LIFERAY: Fails due to https://issues.liferay.com/browse/LPS-77746
       {
          TestResult result = tcd.getTestResultFailed(V3HEADERPORTLETTESTS_SPEC14_PORTLETREQUEST_APIHEADER_ISREQUESTEDSESSIONIDVALID1);
          if(portletReq.isRequestedSessionIdValid()){
