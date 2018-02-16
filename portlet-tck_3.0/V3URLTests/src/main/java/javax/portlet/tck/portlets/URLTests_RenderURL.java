@@ -21,6 +21,7 @@ package javax.portlet.tck.portlets;
 import javax.inject.Inject;
 import javax.portlet.ActionRequest;
 import javax.portlet.ActionResponse;
+import javax.portlet.GenericPortlet;
 import javax.portlet.PortletConfig;
 import javax.portlet.PortletException;
 import javax.portlet.PortletURL;
@@ -62,7 +63,7 @@ import static javax.portlet.tck.util.ModuleTestCaseDetails.V3URLTESTS_RENDERURL_
  * 
  */
 
-public class URLTests_RenderURL {
+public class URLTests_RenderURL extends GenericPortlet {
 
    @Inject
    PortletConfig portletConfig;

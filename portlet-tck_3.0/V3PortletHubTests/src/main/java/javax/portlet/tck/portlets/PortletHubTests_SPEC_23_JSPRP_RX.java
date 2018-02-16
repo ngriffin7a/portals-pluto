@@ -47,7 +47,7 @@ import javax.portlet.tck.util.ModuleTestCaseDetails;
 @PortletConfiguration(portletName = "PortletHubTests_SPEC_23_JSPRP_RX", 
                       publicParams = "prptestcase"
                       )
-public class PortletHubTests_SPEC_23_JSPRP_RX implements Portlet {
+public class PortletHubTests_SPEC_23_JSPRP_RX extends LiferayHackHeaderPortlet implements Portlet {
    
    private PortletConfig portletConfig = null;
 

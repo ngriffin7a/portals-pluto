@@ -21,19 +21,19 @@
 
 <liferay-portlet-app>
 	<portlet>
-		<portlet-name>RenderStateTests_SPEC2_12_RenderState</portlet-name>
+		<portlet-name>PortletParametersTests_SPEC11_1</portlet-name>
 		<requires-namespaced-parameters>false</requires-namespaced-parameters>
 	</portlet>
 	<portlet>
-		<portlet-name>RenderStateTests_SPEC2_12_RenderState2</portlet-name>
+		<portlet-name>PortletParametersTests_SPEC11_3</portlet-name>
 		<requires-namespaced-parameters>false</requires-namespaced-parameters>
 	</portlet>
 	<portlet>
-		<portlet-name>RenderStateTests_SPEC2_12_MutableRenderState</portlet-name>
+		<portlet-name>PortletParametersTests_SPEC11_4</portlet-name>
 		<requires-namespaced-parameters>false</requires-namespaced-parameters>
 	</portlet>
 	<portlet>
-		<portlet-name>RenderStateTests_SPEC2_12_MutableRenderState2</portlet-name>
+		<portlet-name>PortletParametersTests_SPEC11_4A</portlet-name>
 		<requires-namespaced-parameters>false</requires-namespaced-parameters>
 	</portlet>
 </liferay-portlet-app>

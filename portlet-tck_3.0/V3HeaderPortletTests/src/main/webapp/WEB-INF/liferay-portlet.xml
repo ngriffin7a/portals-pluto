@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE liferay-portlet-app PUBLIC "-//Liferay//DTD Portlet Application 7.0.0//EN" "http://www.liferay.com/dtd/liferay-portlet-app_7_0_0.dtd">
+
+<liferay-portlet-app>
+	<portlet>
+		<portlet-name>HeaderPortletTests_SPEC3_6_4_HeaderPortlet</portlet-name>
+		<requires-namespaced-parameters>false</requires-namespaced-parameters>
+	</portlet>
+	<portlet>
+		<portlet-name>HeaderPortletTests_SPEC7_14_RenderRequest</portlet-name>
+		<requires-namespaced-parameters>false</requires-namespaced-parameters>
+	</portlet>
+	<portlet>
+		<portlet-name>HeaderPortletTests_SPEC14_HeaderAttr</portlet-name>
+		<requires-namespaced-parameters>false</requires-namespaced-parameters>
+	</portlet>
+	<portlet>
+		<portlet-name>HeaderPortletTests_SPEC14_HeaderReq</portlet-name>
+		<requires-namespaced-parameters>false</requires-namespaced-parameters>
+	</portlet>
+	<portlet>
+		<portlet-name>HeaderPortletTests_SPEC14_RenderState_ApiHeader</portlet-name>
+		<requires-namespaced-parameters>false</requires-namespaced-parameters>
+	</portlet>
+	<portlet>
+		<portlet-name>HeaderPortletTests_SPEC15_MimeResponse_ApiHeader1</portlet-name>
+		<requires-namespaced-parameters>false</requires-namespaced-parameters>
+	</portlet>
+	<portlet>
+		<portlet-name>HeaderPortletTests_SPEC15_MimeResponse_ApiHeader2</portlet-name>
+		<requires-namespaced-parameters>false</requires-namespaced-parameters>
+	</portlet>
+	<portlet>
+		<portlet-name>HeaderPortletTests_SPEC15_Header</portlet-name>
+		<requires-namespaced-parameters>false</requires-namespaced-parameters>
+	</portlet>
+	<portlet>
+		<portlet-name>HeaderPortletTests_SPEC15_HeaderResponse1</portlet-name>
+		<requires-namespaced-parameters>false</requires-namespaced-parameters>
+	</portlet>
+	<portlet>
+		<portlet-name>HeaderPortletTests_SPEC15_HeaderResponse2</portlet-name>
+		<requires-namespaced-parameters>false</requires-namespaced-parameters>
+	</portlet>
+	<portlet>
+		<portlet-name>HeaderPortletTests_SPEC14_PortletRequest_ApiHeader1</portlet-name>
+		<requires-namespaced-parameters>false</requires-namespaced-parameters>
+	</portlet>
+	<portlet>
+		<portlet-name>HeaderPortletTests_SPEC14_PortletRequest_ApiHeader2</portlet-name>
+		<requires-namespaced-parameters>false</requires-namespaced-parameters>
+	</portlet>
+	<portlet>
+		<portlet-name>HeaderPortletTests_SPEC15_PortletResponse_ApiHeader</portlet-name>
+		<requires-namespaced-parameters>false</requires-namespaced-parameters>
+	</portlet>
+</liferay-portlet-app>

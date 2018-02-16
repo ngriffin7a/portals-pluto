@@ -21,6 +21,7 @@ package javax.portlet.tck.portlets;
 import javax.inject.Inject;
 import javax.portlet.ActionRequest;
 import javax.portlet.ActionResponse;
+import javax.portlet.GenericPortlet;
 import javax.portlet.ResourceURL;
 import javax.portlet.MutableResourceParameters;
 import javax.portlet.PortletConfig;
@@ -60,7 +61,7 @@ import static javax.portlet.tck.util.ModuleTestCaseDetails.V3URLTESTS_RESOURCEUR
  * 
  */
 
-public class URLTests_ResourceURL {
+public class URLTests_ResourceURL extends GenericPortlet {
 
    @Inject
    PortletConfig portletConfig;

@@ -65,7 +65,7 @@ import javax.portlet.tck.util.ModuleTestCaseDetails;
  */
 
 @PortletConfiguration(portletName = "PortletHubTests_SPEC_23_JSURL")
-public class PortletHubTests_SPEC_23_JSURL implements Portlet, ResourceServingPortlet {
+public class PortletHubTests_SPEC_23_JSURL extends LiferayHackHeaderPortlet implements Portlet, ResourceServingPortlet {
    
    private PortletConfig portletConfig = null;
 

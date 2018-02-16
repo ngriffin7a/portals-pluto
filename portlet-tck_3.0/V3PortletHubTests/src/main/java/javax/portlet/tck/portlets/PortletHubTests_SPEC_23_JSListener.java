@@ -51,7 +51,7 @@ import javax.portlet.tck.util.ModuleTestCaseDetails;
  */
 
 @PortletConfiguration(portletName = "PortletHubTests_SPEC_23_JSListener")
-public class PortletHubTests_SPEC_23_JSListener implements Portlet {
+public class PortletHubTests_SPEC_23_JSListener extends LiferayHackHeaderPortlet implements Portlet {
    
    private PortletConfig portletConfig = null;
 

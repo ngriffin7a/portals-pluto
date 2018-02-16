@@ -56,7 +56,7 @@ import javax.portlet.tck.util.ModuleTestCaseDetails;
 @PortletConfiguration(portletName = "PortletHubTests_SPEC_23_JSRS", supports = {
       @Supports(mimeType="*/*", portletModes= {"view", "edit"}, windowStates= {"normal", "maximized"})
 })
-public class PortletHubTests_SPEC_23_JSRS implements Portlet {
+public class PortletHubTests_SPEC_23_JSRS extends LiferayHackHeaderPortlet implements Portlet {
    
    private PortletConfig portletConfig = null;
 

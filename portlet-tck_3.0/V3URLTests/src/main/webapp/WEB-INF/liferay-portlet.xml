@@ -21,19 +21,19 @@
 
 <liferay-portlet-app>
 	<portlet>
-		<portlet-name>RenderStateTests_SPEC2_12_RenderState</portlet-name>
+		<portlet-name>V3URLTests_ActionURL</portlet-name>
 		<requires-namespaced-parameters>false</requires-namespaced-parameters>
 	</portlet>
 	<portlet>
-		<portlet-name>RenderStateTests_SPEC2_12_RenderState2</portlet-name>
+		<portlet-name>V3URLTests_BaseURL</portlet-name>
 		<requires-namespaced-parameters>false</requires-namespaced-parameters>
 	</portlet>
 	<portlet>
-		<portlet-name>RenderStateTests_SPEC2_12_MutableRenderState</portlet-name>
+		<portlet-name>V3URLTests_RenderURL</portlet-name>
 		<requires-namespaced-parameters>false</requires-namespaced-parameters>
 	</portlet>
 	<portlet>
-		<portlet-name>RenderStateTests_SPEC2_12_MutableRenderState2</portlet-name>
+		<portlet-name>V3URLTests_ResourceURL</portlet-name>
 		<requires-namespaced-parameters>false</requires-namespaced-parameters>
 	</portlet>
 </liferay-portlet-app>

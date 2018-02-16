@@ -31,6 +31,7 @@ import java.io.PrintWriter;
 import javax.portlet.ActionParameters;
 import javax.portlet.ActionRequest;
 import javax.portlet.ActionResponse;
+import javax.portlet.EventPortlet;
 import javax.portlet.EventRequest;
 import javax.portlet.EventResponse;
 import javax.portlet.MutableRenderParameters;
@@ -59,7 +60,8 @@ import javax.xml.namespace.QName;
 @PortletConfiguration(portletName = "PortletHubTests_SPEC_23_JSPRP_TX",
                       publicParams = "prptestcase"
                      )
-public class PortletHubTests_SPEC_23_JSPRP_TX implements Portlet {
+public class PortletHubTests_SPEC_23_JSPRP_TX extends LiferayHackHeaderPortlet implements Portlet,
+    EventPortlet {
    
    private PortletConfig portletConfig = null;
 
@@ -94,7 +96,7 @@ public class PortletHubTests_SPEC_23_JSPRP_TX implements Portlet {
    @EventMethod(portletName = "PortletHubTests_SPEC_23_JSPRP_TX", processingEvents = {
          @PortletQName(namespaceURI="http://www.apache.org/", localPart="prpevent")
    })
-   public void doEvent(EventRequest eventReq, EventResponse eventResp) {
+   public void processEvent(EventRequest eventReq, EventResponse eventResp) {
 
       MutableRenderParameters mrp = eventResp.getRenderParameters();
       String testcase = (String) eventReq.getEvent().getValue();
