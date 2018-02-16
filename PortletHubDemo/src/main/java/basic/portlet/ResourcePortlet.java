@@ -79,7 +79,7 @@ import javax.portlet.annotations.Supports;
       supports = @Supports(mimeType = "text/html", portletModes = "VIEW"),
       publicParams = {"color", "imgName"}
       )
-public class ResourcePortlet extends GenericPortlet {
+public class ResourcePortlet extends LiferayHackPortlet {
 
    // Set up logging
    private static final String LOG_CLASS = ResourcePortlet.class.getName();

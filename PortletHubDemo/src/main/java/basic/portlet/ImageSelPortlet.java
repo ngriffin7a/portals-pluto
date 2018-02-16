@@ -49,7 +49,7 @@ import javax.portlet.annotations.PortletConfiguration;
 @PortletConfiguration(portletName = "ImageSelPortlet", publicParams = "imgName", 
                       title = @LocaleString("PH Image Selection Portlet"),
                       dependencies = @Dependency(name="PortletHub", scope="javax.portlet", version="3.0.0"))
-public class ImageSelPortlet extends GenericPortlet {
+public class ImageSelPortlet extends LiferayHackPortlet {
 
    // Set up logging
    private static final String LOG_CLASS = ImageSelPortlet.class.getName();

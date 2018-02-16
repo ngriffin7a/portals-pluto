@@ -56,7 +56,7 @@ import javax.xml.namespace.QName;
 @PortletConfiguration(portletName = "PH-ColorSelPortlet", publicParams = "color", 
                       title = @LocaleString("PH Color Selection Portlet"),
                       dependencies = @Dependency(name="PortletHub", scope="javax.portlet", version="3.0.0"))
-public class ColorSelPortlet extends GenericPortlet {
+public class ColorSelPortlet extends LiferayHackPortlet {
 
    // Set up logging
    private static final String LOG_CLASS = ColorSelPortlet.class.getName();

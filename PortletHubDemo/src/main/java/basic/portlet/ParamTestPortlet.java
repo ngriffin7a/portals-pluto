@@ -51,7 +51,7 @@ import javax.portlet.annotations.PortletConfiguration;
 @PortletConfiguration(portletName = "ParamTestPortlet", publicParams = {"color", "imgName"},
                         title = @LocaleString("PH Parameter Test Portlet"),
                         dependencies = @Dependency(name="PortletHub", scope="javax.portlet", version="3.0.0"))
-public class ParamTestPortlet extends GenericPortlet {
+public class ParamTestPortlet extends LiferayHackPortlet {
 
    // Set up logging
    private static final String LOG_CLASS = ParamTestPortlet.class.getName();

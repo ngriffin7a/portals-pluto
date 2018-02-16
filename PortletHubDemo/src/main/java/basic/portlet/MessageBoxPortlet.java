@@ -52,7 +52,7 @@ import javax.portlet.annotations.PortletQName;
 @PortletConfiguration(portletName = "MessageBoxPortlet", publicParams = "color", 
                       title = @LocaleString("PH Message Box Portlet"),
                       dependencies = @Dependency(name="PortletHub", scope="javax.portlet", version="3.0.0"))
-public class MessageBoxPortlet extends GenericPortlet {
+public class MessageBoxPortlet extends LiferayHackPortlet {
 
    // Set up logging
    private static final String LOG_CLASS = MessageBoxPortlet.class.getName();

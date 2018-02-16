@@ -49,7 +49,7 @@ import javax.portlet.annotations.PortletConfiguration;
 @PortletConfiguration(portletName = "PartialActionPortlet", publicParams = "color",
                         title = @LocaleString("PH Partial Action Portlet"),
                         dependencies = @Dependency(name="PortletHub", scope="javax.portlet", version="3.0.0"))
-public class PartialActionPortlet extends GenericPortlet {
+public class PartialActionPortlet extends LiferayHackPortlet {
 
    // Set up logging
    private static final String LOG_CLASS = PartialActionPortlet.class.getName();
