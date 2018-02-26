@@ -25,6 +25,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 import javax.enterprise.context.ApplicationScoped;
+import javax.portlet.GenericPortlet;
 import javax.portlet.PortletConfig;
 import javax.portlet.PortletException;
 import javax.portlet.RenderRequest;
@@ -38,7 +39,7 @@ import javax.portlet.tck.util.ModuleTestCaseDetails;
  * Implements test to verify that the annotated init method is called.
  */
 @ApplicationScoped
-public class PortletConfigTests_ConfigInit {
+public class PortletConfigTests_ConfigInit extends GenericPortlet {
 
    PortletConfig portletConfig;
 

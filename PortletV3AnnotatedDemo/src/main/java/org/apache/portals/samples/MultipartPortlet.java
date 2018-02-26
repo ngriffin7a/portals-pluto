@@ -37,12 +37,15 @@ import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 import javax.portlet.ActionRequest;
 import javax.portlet.ActionResponse;
+import javax.portlet.GenericPortlet;
+import javax.portlet.Portlet;
 import javax.portlet.PortletException;
 import javax.portlet.PortletRequestDispatcher;
 import javax.portlet.RenderRequest;
 import javax.portlet.RenderResponse;
 import javax.portlet.ResourceRequest;
 import javax.portlet.ResourceResponse;
+import javax.portlet.ResourceServingPortlet;
 import javax.portlet.annotations.ActionMethod;
 import javax.portlet.annotations.LocaleString;
 import javax.portlet.annotations.PortletConfiguration;
@@ -58,14 +61,14 @@ import javax.servlet.http.Part;
  */
 @PortletConfiguration(portletName="MultipartPortlet", cacheExpirationTime=5,
       title=@LocaleString("Multipart Form Test"))
-public class MultipartPortlet {
+public class MultipartPortlet extends GenericPortlet {
    private static final Logger LOGGER = Logger.getLogger(MultipartPortlet.class.getName());
 
    private static final String JSP    = "/WEB-INF/jsp/multipartDialog.jsp";
    private static final String TMP    = "/MultipartPortlet/temp/";
 
    @ActionMethod(portletName = "MultipartPortlet")
-   public void handleDialog(ActionRequest req, ActionResponse resp) throws IOException, PortletException {
+   public void processAction(ActionRequest req, ActionResponse resp) throws IOException, PortletException {
       List<String> lines = new ArrayList<String>();
       req.getPortletSession().setAttribute("lines", lines);
 
@@ -227,7 +230,7 @@ public class MultipartPortlet {
    }
    
    @ServeResourceMethod(portletNames="MultipartPortlet")
-   public void serveImage(ResourceRequest req, ResourceResponse resp) throws IOException {
+   public void serveResource(ResourceRequest req, ResourceResponse resp) throws IOException {
       String fn = req.getRenderParameters().getValue("fn");
       String ct = req.getRenderParameters().getValue("ct");
       

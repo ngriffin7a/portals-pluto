@@ -21,6 +21,7 @@ package javax.portlet.tck.portlets;
 import javax.inject.Inject;
 import javax.portlet.ActionRequest;
 import javax.portlet.ActionResponse;
+import javax.portlet.GenericPortlet;
 import javax.portlet.PortletConfig;
 import javax.portlet.PortletException;
 import javax.portlet.PortletMode;
@@ -98,11 +99,19 @@ import static javax.portlet.tck.util.ModuleTestCaseDetails.V3PORTLETCONFIGTESTS_
                 @Supports(mimeType = "text/xml", portletModes = {"view", "help"}, windowStates = {"normal"})
         }
 )
-public class PortletConfigTests_Config {
+public class PortletConfigTests_Config extends GenericPortlet {
 
 
     @Inject
     PortletConfig portletConfig;
+
+    // NOTE: This method defeats the purpose of @Inject but it gets things
+    // working on Liferay while CDI is not yet enabled.
+    @Override
+    public void init(PortletConfig config) throws PortletException {
+        super.init(config);
+        portletConfig = config;
+    }
 
     public void processAction(ActionRequest portletReq, ActionResponse portletResp) throws PortletException, IOException {
     }

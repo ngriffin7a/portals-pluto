@@ -30,6 +30,8 @@ import java.io.PrintWriter;
 import javax.inject.Inject;
 import javax.portlet.ActionRequest;
 import javax.portlet.ActionResponse;
+import javax.portlet.GenericPortlet;
+import javax.portlet.PortletConfig;
 import javax.portlet.PortletContext;
 import javax.portlet.PortletException;
 import javax.portlet.RenderRequest;
@@ -50,10 +52,18 @@ import javax.portlet.tck.util.ModuleTestCaseDetails;
  * PortletContextTests_Context_event
  * 
  */
-public class PortletContextTests_Context {
+public class PortletContextTests_Context extends GenericPortlet {
 
    @Inject
    PortletContext portletContext;
+
+   // NOTE: This method defeats the purpose of @Inject but it gets things
+   // working on Liferay while CDI is not yet enabled.
+   @Override
+   public void init(PortletConfig config) throws PortletException {
+      super.init(config);
+      portletContext = config.getPortletContext();
+   }
 
    public void processAction(ActionRequest portletReq, ActionResponse portletResp) throws PortletException, IOException {
    }
